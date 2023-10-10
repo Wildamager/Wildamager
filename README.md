@@ -1,3 +1,8 @@
+<div id="header" align="center">
+    <h1>Hi there 👋, I'm Sergey</h1>
+    <h3>Full Stack Web-Developer from Sibiria</h3>
+</div>
+
 ### Hi there 👋
 
 <!--
