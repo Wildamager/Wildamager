@@ -2,9 +2,12 @@
     <h1>Hi there 👋, I'm Sergey</h1>
     <h3>Full Stack Web-Developer from Sibiria</h3>
 </div>
-<a href="telegram-url">
-    <img src="https://cdn.icon-icons.com/icons2/923/PNG/256/telegram_icon-icons.com_72055.png" alt="Telegram"/>
-</a>
+<div id="socials" align="center">
+     <a href="https://t.me/wildamager">
+        <img src="https://cdn.icon-icons.com/icons2/923/PNG/256/telegram_icon-        icons.com_72055.png" alt="Telegram" style="width: 35px; height: 35px;"/>
+    </a>   
+</div>
+
 <!--
 **Wildamager/Wildamager** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
