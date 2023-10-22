@@ -4,7 +4,7 @@
 </div>
 <div id="socials" align="center">
      <a href="https://t.me/wildamager">
-        <img src="https://cdn.icon-icons.com/icons2/923/PNG/256/telegram_icon-icons.com_72055.png"  />
+        <img src="https://cdn.icon-icons.com/icons2/923/PNG/256/telegram_icon-icons.com_72055.png" style="width:50%; height:50% "/>
     </a>   
 </div>
 
