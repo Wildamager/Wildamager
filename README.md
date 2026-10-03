@@ -1,109 +1,159 @@
 <div align="center">
 
-# Sergey M.
+# Сергей — Python / Fullstack Developer
 
-**Full-stack developer · Python / Django / FastAPI · React · Docker**
-
-I build web applications end to end — relational models, background jobs and
-APIs on the backend, the interface people actually touch on the frontend, and a
-Docker Compose stack that runs the whole thing.
+**Fullstack-разработчик с основным стеком Python / Django и React.
+Больше специализируюсь на backend, но самостоятельно реализую клиентскую часть
+и развертываю приложение на сервере.**
 
 [![Telegram](https://img.shields.io/badge/Telegram-@mchlv_srg-2AABEE?logo=telegram&logoColor=white)](https://t.me/mchlv_srg)
 [![GitHub](https://img.shields.io/badge/GitHub-Wildamager-181717?logo=github&logoColor=white)](https://github.com/Wildamager)
+
+`[Город]` • `[Телефон]` • `[Email]` • [Telegram](https://t.me/mchlv_srg)
+
+Частичная занятость • Удалённая работа
 
 </div>
 
 ---
 
-## About
+## О себе
 
-Python is my main language. Most of my work is a Django or FastAPI service with
-a REST API, asynchronous tasks, a database and a containerised deployment, plus
-a frontend in React or in server-rendered templates.
+Fullstack-разработчик с основным стеком Python/Django и React. Больше
+специализируюсь на backend, но могу самостоятельно реализовать клиентскую часть
+и развернуть приложение на сервере.
 
-| Area | Technologies |
+Есть опыт разработки frontend MVP в AI-стартапе и самостоятельной разработки
+веб-платформы DanceSpace.
+
+## Технические навыки
+
+| Область | Технологии |
 |---|---|
-| Backend | Python 3 · Django · FastAPI · DRF · Celery · JWT · SQLAlchemy/Alembic |
-| Frontend | React · Next.js · JavaScript (ES6+) · HTML5 · CSS3 · Bootstrap |
-| Data | PostgreSQL · SQLite · Redis · Elasticsearch · pandas / NumPy |
-| ML and CV | OpenCV · dlib · face_recognition · scikit-learn · Haar cascades |
-| Automation | aiogram 2/3 · Selenium · Playwright · Telethon · APScheduler |
-| Infra | Docker Compose · Gunicorn · Nginx · WhiteNoise · Linux · Git |
-| Quality | pytest · unittest · Ruff · mypy · GitHub Actions |
+| Backend | Python, Django, Django REST Framework, PostgreSQL, Redis, Celery, WebSocket |
+| Frontend | React, TypeScript, JavaScript, HTML, CSS, Tailwind CSS |
+| Инфраструктура | Linux, Docker Compose, Nginx, Git / GitHub |
+| Дополнительно | Flask, FastAPI, SQLite, Elasticsearch, BeautifulSoup, Selenium, Playwright |
 
-Beyond web applications I work with data and hardware: async scraping of
-marketplaces, data visualisation on maps, computer vision on camera streams and
-security research on embedded devices.
+## Опыт работы
 
-## Featured work
+### `[Основное место работы]` — `[Должность]` | 2023 — настоящее время
 
-| Project | What it does | Stack |
+Исследование программного обеспечения встроенных систем.
+
+- Исследование прошивки и аппаратной части встраиваемых устройств: чтение
+  дампов, анализ загрузчиков, поиск аппаратных векторов атаки.
+- Разработка инструментов автоматизации на Python для работы с GPIO, файловыми
+  системами и сетевым оборудованием.
+
+### HaronTech — AI-стартап | Frontend-разработчик | 2025–2026
+
+Самостоятельно спроектировал и реализовал frontend MVP продукта.
+
+- Разработал пользовательский чат, личные кабинеты, административную панель и
+  лендинг.
+- Реализовал взаимодействие клиентской части с backend через REST и WebSocket.
+- Настроил управление состоянием приложения, PWA-функциональность и визуализацию
+  данных.
+
+Стек: React, TypeScript, Vite, Tailwind CSS, React Router, Zustand,
+TanStack Query, Chart.js.
+
+Демонстрация: `[ссылка]`
+
+## Проекты
+
+### DanceSpace — платформа для организации мероприятий
+
+Fullstack-разработчик | `[год]` — настоящее время
+
+Разрабатываю веб-платформу для автоматизации работы организаторов мероприятий.
+Основная зона ответственности — backend и архитектура приложения; также
+занимаюсь частью frontend-разработки и развитием продукта.
+
+- Спроектировал структуру backend-приложения и базы данных.
+- Реализовал регистрацию и авторизацию пользователей, ролевые личные кабинеты,
+  систему подачи и управления заявками.
+- Разработал управление мероприятиями, административную панель, работу с
+  фотографиями и музыкальными файлами.
+- Реализовал email-рассылки и фоновые задачи.
+- Самостоятельно разворачиваю приложение на VPS с использованием Docker Compose
+  и Nginx.
+
+Стек: Python, Django, Django REST Framework, PostgreSQL, Redis, Celery, React,
+Docker Compose, Nginx.
+
+Демонстрация: `[ссылка]`
+
+Другие закрытые проекты: панель управления VPN-контейнерами на Django
+(provisioning OpenVPN, выдача `.ovpn`-профилей), Telegram-бот с Mini App для
+отслеживания цен маркетплейсов (aiogram, Playwright, Selenium), Telegram-боты для
+сбора откликов на вакансии и заявок на хакатон.
+
+### Открытые проекты на GitHub
+
+| Проект | Что это | Стек |
 |---|---|---|
-| [`campus-security-analytics`](https://github.com/Wildamager/campus-security-analytics) | Video analytics for IP cameras: live stream, face and licence-plate recognition, person and car database, dashboard. Recognition runs in Celery workers so the web request never blocks on computer vision | Django · Celery · Redis · PostgreSQL · OpenCV · dlib · Docker Compose |
-| [`vk-spotify-extension`](https://github.com/Wildamager/vk-spotify-extension) | Chrome extension (Manifest V3): right-click a track on VK, find it in the Spotify catalog and save it to your library | JavaScript · Chrome APIs · Spotify Web API |
-| [`sports-infrastructure-map`](https://github.com/Wildamager/sports-infrastructure-map) | Interactive map of a city sports-facility dataset: linked object list, accessibility heat maps, per-sport layers, analytics and recommendations. Hackathon team RA1NF0RCE | Flask · Leaflet · Mapbox GL · GeoJSON · jQuery |
-| [`marketplace-scraper`](https://github.com/Wildamager/marketplace-scraper) | Scrapers for Russian drone and electronics marketplaces: category trees, pagination and structured JSON output | Python · requests · BeautifulSoup · lxml |
-| [`lct2026_task_2`](https://github.com/Wildamager/lct2026_task_2) | Security research on an RP2040 board: BOOTSEL flash dump, automated PIN brute force, hardware attack vectors | Python · Raspberry Pi GPIO · reverse engineering |
-| [`psb_sport`](https://github.com/Wildamager/psb_sport) | Telegram bot for a sports school: schedule, student records, group announcements (work in progress) | Python · aiogram 2 · SQLAlchemy · APScheduler |
+| [`campus-security-analytics`](https://github.com/Wildamager/campus-security-analytics) | Аналитика с IP-камер: живой видеопоток, распознавание лиц и автомобильных номеров, база людей и машин, распознавание вынесено в Celery-задачи | Django · Celery · Redis · PostgreSQL · OpenCV · dlib · Docker Compose |
+| [`vk-spotify-extension`](https://github.com/Wildamager/vk-spotify-extension) | Расширение для Chrome (Manifest V3): правый клик по треку VK → поиск в Spotify → сохранение в библиотеку | JavaScript · Chrome Extension API · Spotify Web API |
+| [`sports-infrastructure-map`](https://github.com/Wildamager/sports-infrastructure-map) | Интерактивная карта спортивных объектов города: связанный список, тепловые карты доступности, слои по видам спорта, аналитика и рекомендации | Flask · Leaflet · Mapbox GL · GeoJSON |
+| [`marketplace-scraper`](https://github.com/Wildamager/marketplace-scraper) | Парсеры российских маркетплейсов: дерево категорий, пагинация, структурированный JSON | Python · requests · BeautifulSoup · lxml |
+| [`lct2026_task_2`](https://github.com/Wildamager/lct2026_task_2) | Исследование прошивки платы RP2040: дамп флеш-памяти через BOOTSEL, перебор PIN, аппаратные векторы атаки | Python · Raspberry Pi GPIO · reverse engineering |
+| [`psb_sport`](https://github.com/Wildamager/psb_sport) | Telegram-бот для спортивной школы: расписание, данные учеников, рассылки по группам (в процессе) | Python · aiogram · SQLAlchemy · APScheduler |
 
-## Private and client work
+## Хакатоны
 
-These repositories are not public, so the code stays where it belongs, but the
-work is real:
+Участвовал в командной разработке прототипов. Разрабатывал на Python парсеры и
+инструменты сбора данных, работал с SQLite.
 
-- **DanceSpace** — commercial platform for the dance industry: FastAPI service
-  with JWT auth, media storage in MinIO, background jobs and a Next.js frontend.
-- **VPNservice** — Django control panel that provisions OpenVPN containers per
-  user and hands out `.ovpn` profiles.
-- **PriceRanker (BestBuyBot)** — Telegram bot and Mini App that tracks prices
-  across Wildberries, Ozon and Yandex.Market, with Playwright parsers and
-  Telegram Stars payments.
-- **Product catalogue search** — React SPA plus Django, Elasticsearch and Celery;
-  currently a prototype.
-- Two Telegram bots: a job-application collector and a hackathon admission bot.
+Инструменты: requests, BeautifulSoup, Selenium, Playwright.
 
-## Current focus
+- **Всероссийский хакатон** — аналитика с камер видеонаблюдения:
+  [`campus-security-analytics`](https://github.com/Wildamager/campus-security-analytics).
+- **LCT** — интерактивная карта спортивной инфраструктуры:
+  [`sports-infrastructure-map`](https://github.com/Wildamager/sports-infrastructure-map).
+- Парсеры маркетплейсов и дронов:
+  [`marketplace-scraper`](https://github.com/Wildamager/marketplace-scraper).
 
-Building the product catalogue search service: catalogue models, a REST API for
-listings and products, Celery tasks for parsing and indexing into Elasticsearch,
-and the SPA wired to that API.
+## Образование
 
-## What I care about in my own code
+`[Название вуза]` — `[Специальность]`
 
-- No secrets in the repository: everything comes from the environment, `.env` is
-  ignored, and `.env.example` documents what is needed.
-- Pinned dependencies and a documented setup path, so a fresh clone runs.
-- Tests where behaviour matters: the camera analytics API has a test suite, the
-  bots have unit tests, and the FastAPI service runs pytest in CI.
-- READMEs that say what actually works — including the parts that do not.
+Высшее образование, 2023.
 
-## Contributing
+## Дополнительная информация
 
-Issues and pull requests are welcome. Each project README has its own setup
-instructions and an honest status section.
+Английский: базовый разговорный, чтение технической документации.
+
+В рабочих проектах придерживаюсь простых правил: секреты только из окружения,
+зафиксированные зависимости и документированный способ запуска, тесты там, где
+есть логика, и README, который честно описывает состояние проекта.
 
 ---
 
 <div align="center">
 
-### RU — коротко
+### EN — short version
 
-Привет, я Сергей, full-stack разработчик: Python (Django, FastAPI) + React,
-PostgreSQL, Redis, Elasticsearch, Docker Compose.
+Python / Fullstack Developer. Primarily backend: Python, Django, DRF,
+PostgreSQL, Redis, Celery, WebSocket. Comfortable on the frontend as well —
+React, TypeScript, Tailwind — and can deploy and maintain the whole application
+(Docker Compose, Nginx, Linux).
 
-Открытые проекты: аналитика с камер видеонаблюдения с распознаванием лиц и
-автомобильных номеров, расширение VK → Spotify, интерактивная карта спортивных
-объектов с тепловыми картами доступности, парсеры маркетплейсов, исследование
-прошивки RP2040 и Telegram-бот для спортивной школы.
+- 2023 — present: embedded systems software research.
+- 2025–2026, HaronTech (AI startup): designed and built the frontend MVP on my
+  own — user chat, personal accounts, admin panel, landing, REST and WebSocket
+  integration, state management, PWA and data visualisation.
+- DanceSpace: a web platform for event organisers where I own the backend and
+  architecture, plus part of the frontend. Registration and authorisation, role
+  based accounts, application management, event management, media handling,
+  email campaigns, background tasks, self-managed VPS deployment.
+- Hackathons: camera video analytics with face and licence-plate recognition,
+  an interactive sports infrastructure map, marketplace parsers.
 
-Часть работы закрыта: коммерческая платформа для танцевальной индустрии
-(FastAPI + Next.js), панель управления VPN-контейнерами, Telegram-бот с
-отслеживанием цен маркетплейсов и телеграм-боты для откликов на вакансии и
-заявок на хакатон.
-
-Пишу код с тестами, зафиксированными зависимостями, настройками из окружения и
-README, который честно описывает состояние проекта.
-
-Открыт к предложениям и задачам: [Telegram](https://t.me/mchlv_srg)
+Open-source work: [campus-security-analytics](https://github.com/Wildamager/campus-security-analytics),
+[vk-spotify-extension](https://github.com/Wildamager/vk-spotify-extension),
+[sports-infrastructure-map](https://github.com/Wildamager/sports-infrastructure-map),
+[marketplace-scraper](https://github.com/Wildamager/marketplace-scraper).
 
 </div>
