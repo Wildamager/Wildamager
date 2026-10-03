@@ -2,13 +2,14 @@
 
 # Sergey M.
 
-**Full-stack developer · Python / Django · React · Docker**
+**Full-stack developer · Python / Django / FastAPI · React · Docker**
 
-Building web applications end to end — from relational data models and async
-tasks to the interface people actually touch.
+I build web applications end to end — relational models, background jobs and
+APIs on the backend, the interface people actually touch on the frontend, and a
+Docker Compose stack that runs the whole thing.
 
 [![Telegram](https://img.shields.io/badge/Telegram-@mchlv_srg-2AABEE?logo=telegram&logoColor=white)](https://t.me/mchlv_srg)
-[![Profile](https://img.shields.io/badge/GitHub-Wildamager-181717?logo=github&logoColor=white)](https://github.com/Wildamager)
+[![GitHub](https://img.shields.io/badge/GitHub-Wildamager-181717?logo=github&logoColor=white)](https://github.com/Wildamager)
 
 </div>
 
@@ -16,45 +17,70 @@ tasks to the interface people actually touch.
 
 ## About
 
-I build full-stack web apps in Python with Django on the backend and React on the
-frontend, shipping them with Docker and PostgreSQL. My day-to-day stack:
+Python is my main language. Most of my work is a Django or FastAPI service with
+a REST API, asynchronous tasks, a database and a containerised deployment, plus
+a frontend in React or in server-rendered templates.
 
-| Backend | Frontend | Data & Infra |
-|---|---|---|
-| Python 3 · Django · Celery · REST-style views | React · JavaScript (ES6+) · HTML5 · CSS3 · Bootstrap | PostgreSQL · Redis · Docker · Git · Linux |
+| Area | Technologies |
+|---|---|
+| Backend | Python 3 · Django · FastAPI · DRF · Celery · JWT · SQLAlchemy/Alembic |
+| Frontend | React · Next.js · JavaScript (ES6+) · HTML5 · CSS3 · Bootstrap |
+| Data | PostgreSQL · SQLite · Redis · Elasticsearch · pandas / NumPy |
+| ML and CV | OpenCV · dlib · face_recognition · scikit-learn · Haar cascades |
+| Automation | aiogram 2/3 · Selenium · Playwright · Telethon · APScheduler |
+| Infra | Docker Compose · Gunicorn · Nginx · WhiteNoise · Linux · Git |
+| Quality | pytest · unittest · Ruff · mypy · GitHub Actions |
 
-Also comfortable with data work: async scraping, `pandas` / `numpy`, OpenCV-based
-image and video processing, and hardware-adjacent security research.
-
-- 🔭 Currently building: a **Django + React** full-stack app (REST API, JWT auth,
-  PostgreSQL, Redis, Docker Compose) — see roadmap below.
-- 🌱 Currently learning: React & TypeScript, deeper system design, async Python.
-- 🔒 Side track: CTF-style security research (firmware extraction, embedded targets).
+Beyond web applications I work with data and hardware: async scraping of
+marketplaces, data visualisation on maps, computer vision on camera streams and
+security research on embedded devices.
 
 ## Featured work
 
-| Project | What it is | Stack |
+| Project | What it does | Stack |
 |---|---|---|
-| [`campus-security-analytics`](https://github.com/Wildamager/allrussianhackaton) *(in progress: rename)* | Camera analytics platform: live video stream from IP cameras, face and licence-plate recognition, person/car database with dashboard, async processing via Celery | Django · Celery · Redis · PostgreSQL · OpenCV · dlib · Docker |
-| [`vk-spotify-extension`](https://github.com/Wildamager/Google_extention) *(in progress: rename)* | Browser extension that finds the current track on VK and opens it in Spotify | JavaScript · Chrome Extension API |
-| [`marketplace-scraper`](https://github.com/Wildamager/Parsing) *(in progress: rename)* | Async parsers for Russian marketplaces with structured JSON output | Python · requests · BeautifulSoup |
-| [`crowd-pulse-map`](https://github.com/Wildamager/LCT_RA1NF0RCE) *(in progress: rename)* | Data-visualisation web app: interactive heat map, density analytics and recommendations | Flask · Leaflet · jQuery · GeoJSON |
-| [`rp2040-security-research`](https://github.com/Wildamager/lct2026_task_2) *(in progress: rename)* | Security research on an RP2040 device: BOOTSEL flash dump, automated PIN brute force, hardware attack vectors | Python · Raspberry Pi GPIO · reverse engineering |
+| [`campus-security-analytics`](https://github.com/Wildamager/campus-security-analytics) | Video analytics for IP cameras: live stream, face and licence-plate recognition, person and car database, dashboard. Recognition runs in Celery workers so the web request never blocks on computer vision | Django · Celery · Redis · PostgreSQL · OpenCV · dlib · Docker Compose |
+| [`vk-spotify-extension`](https://github.com/Wildamager/vk-spotify-extension) | Chrome extension (Manifest V3): right-click a track on VK, find it in the Spotify catalog and save it to your library | JavaScript · Chrome APIs · Spotify Web API |
+| [`sports-infrastructure-map`](https://github.com/Wildamager/sports-infrastructure-map) | Interactive map of a city sports-facility dataset: linked object list, accessibility heat maps, per-sport layers, analytics and recommendations. Hackathon team RA1NF0RCE | Flask · Leaflet · Mapbox GL · GeoJSON · jQuery |
+| [`marketplace-scraper`](https://github.com/Wildamager/marketplace-scraper) | Scrapers for Russian drone and electronics marketplaces: category trees, pagination and structured JSON output | Python · requests · BeautifulSoup · lxml |
+| [`lct2026_task_2`](https://github.com/Wildamager/lct2026_task_2) | Security research on an RP2040 board: BOOTSEL flash dump, automated PIN brute force, hardware attack vectors | Python · Raspberry Pi GPIO · reverse engineering |
+| [`psb_sport`](https://github.com/Wildamager/psb_sport) | Telegram bot for a sports school: schedule, student records, group announcements (work in progress) | Python · aiogram 2 · SQLAlchemy · APScheduler |
 
-## Roadmap
+## Private and client work
 
-- [x] Django application with custom admin, media storage and auth
-- [x] Background task queue (Celery + Redis)
-- [x] Camera stream processing, face/plate detection
-- [ ] REST API with token authentication
-- [ ] React dashboard consuming the API
-- [ ] Docker Compose for the whole stack (web + db + redis + worker)
-- [ ] CI with tests on every push
+These repositories are not public, so the code stays where it belongs, but the
+work is real:
+
+- **DanceSpace** — commercial platform for the dance industry: FastAPI service
+  with JWT auth, media storage in MinIO, background jobs and a Next.js frontend.
+- **VPNservice** — Django control panel that provisions OpenVPN containers per
+  user and hands out `.ovpn` profiles.
+- **PriceRanker (BestBuyBot)** — Telegram bot and Mini App that tracks prices
+  across Wildberries, Ozon and Yandex.Market, with Playwright parsers and
+  Telegram Stars payments.
+- **Product catalogue search** — React SPA plus Django, Elasticsearch and Celery;
+  currently a prototype.
+- Two Telegram bots: a job-application collector and a hackathon admission bot.
+
+## Current focus
+
+Building the product catalogue search service: catalogue models, a REST API for
+listings and products, Celery tasks for parsing and indexing into Elasticsearch,
+and the SPA wired to that API.
+
+## What I care about in my own code
+
+- No secrets in the repository: everything comes from the environment, `.env` is
+  ignored, and `.env.example` documents what is needed.
+- Pinned dependencies and a documented setup path, so a fresh clone runs.
+- Tests where behaviour matters: the camera analytics API has a test suite, the
+  bots have unit tests, and the FastAPI service runs pytest in CI.
+- READMEs that say what actually works — including the parts that do not.
 
 ## Contributing
 
-Issues and pull requests are welcome in the portfolio repositories — see the
-individual project READMEs for setup instructions.
+Issues and pull requests are welcome. Each project README has its own setup
+instructions and an honest status section.
 
 ---
 
@@ -62,16 +88,22 @@ individual project READMEs for setup instructions.
 
 ### RU — коротко
 
-Привет, я Сергей, full-stack разработчик: Python/Django + React, PostgreSQL, Redis,
-Docker. В репозиториях — реальные проекты: аналитика с камер видеонаблюдения
-с распознаванием лиц и номеров, браузерное расширение VK → Spotify, асинхронные
-парсеры маркетплейсов, визуализация геоданных и исследование прошивки RP2040.
+Привет, я Сергей, full-stack разработчик: Python (Django, FastAPI) + React,
+PostgreSQL, Redis, Elasticsearch, Docker Compose.
+
+Открытые проекты: аналитика с камер видеонаблюдения с распознаванием лиц и
+автомобильных номеров, расширение VK → Spotify, интерактивная карта спортивных
+объектов с тепловыми картами доступности, парсеры маркетплейсов, исследование
+прошивки RP2040 и Telegram-бот для спортивной школы.
+
+Часть работы закрыта: коммерческая платформа для танцевальной индустрии
+(FastAPI + Next.js), панель управления VPN-контейнерами, Telegram-бот с
+отслеживанием цен маркетплейсов и телеграм-боты для откликов на вакансии и
+заявок на хакатон.
+
+Пишу код с тестами, зафиксированными зависимостями, настройками из окружения и
+README, который честно описывает состояние проекта.
 
 Открыт к предложениям и задачам: [Telegram](https://t.me/mchlv_srg)
 
 </div>
-
-<!--
-Служебное: чтобы профиль не выглядел пустым, включите Contributions и Activity
-в настройках профиля GitHub (Settings → Profile → Contributions / Private contributions).
--->
